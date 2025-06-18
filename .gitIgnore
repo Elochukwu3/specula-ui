@@ -1,0 +1,41 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Node.js (if you use npm/yarn for tools like Tailwind or Prettier)
+node_modules/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor folders and settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Optional: cache or temporary files
+.cache/
+*.bak
+*.tmp
+*.swp
+
+# If you're using Parcel/Vite/Webpack
+.parcel-cache/
+*.tsbuildinfo
+
+# macOS Finder tags
+.AppleDouble
+.LSOverride
