@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -103,3 +109,4 @@ main {
     max-width: 100%;
   }
 }
+
