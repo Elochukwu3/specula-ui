@@ -15,7 +15,6 @@
 .s {
   display: flex;
   justify-content: space-between;
-
   gap: 60px;
 }
 
@@ -49,12 +48,11 @@
 }
 
 main {
-  background-color: beige;
   display: flex;
-  justify-content: center;
   align-items: center;
-
   padding: 0;
+  flex-direction: column;
+  gap: 20px;
 }
 .hero-heading {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -77,6 +75,8 @@ main {
 }
 .img-hero {
   width: 100%;
+   margin-top: 60px;
+
 }
 
 /* Media query for screens less than 768px */
