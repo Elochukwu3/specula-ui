@@ -5,72 +5,59 @@
     <title>Specula</title>
  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-         <link rel="stylesheet" href="styles/collab.css">
-<link rel="stylesheet" href="styles/main.css" />
-<link rel="stylesheet" href="styles/fix.css" />
-       <link rel="stylesheet" href="../specula-ui/styles/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/collab.css">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/fix.css" />
+    <link rel="stylesheet" href="../specula-ui/styles/navigation.css">
        <link rel="stylesheet" href="article3.css">
+
 </head>
 
 <body  class="body-container">
  
-  <div class="header-section"> 
-   <header class="navigation">
+        <!-- <div class="header-section">  -->
+            <header class="navigation">
                 <div class="nav_img">
-                    <img src="../specula-ui/images/logo.png" width="150px" alt="A logo">
+                    <img src="../specula-ui/images/logo.png" width="200px" alt="A logo">
                 </div>
 
-                <div class="nav_content">
-                    <p style="font-weight: 800;">Products</p>
-                    <p>Technology</p>
-                    <p>About Us</p>
-                    <p>Solutions</p>
-                    <p>Reviews</p>
+                <div class="sidebar" id="sideBar">
+                    <ul>
+                        <li>Products</li>
+                        <li>Technology</li>
+                        <li>About Us</li>
+                        <li>Reviews</li>
+                    </ul>
                 </div>
+                
+                <div class="nav_content">
+                    <ul>
+                        <li>Products</li>
+                        <li>Technology</li>
+                        <li>About Us</li>
+                        <li>Reviews</li>
+                    </ul>
+                </div>
+
 
                 <div class="nav_part">
                     <div class="nav_icon">
                         <i class="fa-solid fa-bag-shopping"></i>
-                    </div>
-                
+                        <sup>08</sup>
+                    </div>   
                     <div class="nav_btn">
                         <button>GET IN TOUCH</button>
                     </div>
+                </div> 
+
+                <div class="responsive_bar" id="menu">
+                    <ul>
+                        <li><i class="fa-solid fa-bars" id="icon"></i></li>
+                    </ul>
                 </div>
             </header>
 
-
-
-            <header class="m_navigation">
-                <div class="total">
-                    <div class="m_nav_img">
-                        <img src="../specula-ui/images/logo.png" width="70px" alt="A logo">
-                    </div>
-
-                    <div class="m_nav_part">
-                        <div class="m_nav_icon">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </div>
-                
-                        <div class="m_nav_btn">
-                            <button>GET IN TOUCH</button>
-                        </div>
-                    </div>
-
-                    
-                </div>
-                
-                <div class="m_nav_content">
-                    <p style="font-weight: 800;">Products</p>
-                    <p>Technology</p>
-                    <p>About Us</p>
-                    <p>Solutions</p>
-                    <p>Reviews</p>
-                </div>
-                
-            </header>
-  </div>
         <main>
            <section class="hero-container">
         <div class="hero-heading">
@@ -81,7 +68,7 @@
           of in <br>person collaboration to a home office traditional document camera.
         </p>
          <div class="btn-c"><button class="btn-hero">BUY SPECULA</button></div>
-        <img class="img-hero" src="/images/nobg-lamp.png"/>
+        <img class="img-hero" src="../specula-ui/images/nobg-lamp.png"/>
         </section>
     <!-- //collabo section -->
             <div class="collaboration-section">
@@ -91,7 +78,7 @@
 
                 <div class="product-section">
                     <div class="lamp-img">
-                        <img src="/images/torch-1.png" alt="">
+                        <img src="../specula-ui/images/torch-1.png" alt="">
                     </div>
                     <div class="product-image-cont">
                         <div class="feature-card versatile-hinge">
@@ -116,13 +103,44 @@
                                 stand.
                             </p>
                         </div>
-                        <img src="/images/camera.png" alt="" class="product-image">
+                        <img src="../specula-ui/images/camera.png" alt="" class="product-image">
                     </div>
                     <div class="lamp-img lamp-img2">
-                        <img src="images/torch-3.png" alt="">
+                        <img src="../specula-ui/images/torch-3.png" alt="">
                     </div>
 
+                </div>
+            </div>
 
+            <!-- Communication_section -->
+            <div class="communication_section">
+                <div class="communication_header">
+                    <h1>Effective communication is the bridge <br> between isolation and collaboration.</h1>
+                    <p>Specula reduces multiple UX steps & improves workflows with an integrated projector feature for <br> document view & screen projections, a detachable remote control for ease of use.</p>
+                </div>
+
+                <div class="main">
+                    <div class="major">
+                        <img src="../specula-ui/images/black lamp.png" alt="A lamp">
+                    </div>
+
+                    <div class="minor">
+                        <div>
+                            <img src="../specula-ui/images/human-image.jpg" alt="A person">
+                        </div>
+                        <div class="camera">
+                            <p>Specula's camera head can also be lifted to capture a whiteboard or sticky notes on a wall</p>
+
+                            <div class="explore">
+                                <div>
+                                    <button>EXPLORE MORE</button>
+                                </div>
+                                <div>
+                                    <h3>OUR TECHNOLOGY</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <section class="article3-container">
@@ -149,6 +167,31 @@
         </main>
         <footer></footer>
     </div>
+
+    <script>
+        function showSideBar() {
+            const displayBar = document.getElementById('sideBar');
+            console.log('Hello');
+            
+            
+            const hamburger = document.getElementById('menu');
+
+            const iconName = document.getElementById('icon');
+
+            hamburger.addEventListener('click', function() {
+                displayBar.classList.toggle('active')
+                if(iconName.classList.contains('fa-bars')) {
+                    iconName.classList.add('fa-x')
+                    iconName.classList.remove('fa-bars')
+                }
+                else {
+                    iconName.classList.add('fa-bars')
+                    iconName.classList.remove('fa-x')
+                }
+            })
+        }
+        showSideBar();
+    </script>
 </body>
 
 </html>
