@@ -1,49 +1,65 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .stay-heading {
-   font-size: clamp(2rem, 6vw, 3.5rem);
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
   font-weight: 700;
   font-family: 'Impact', sans-serif;
-  font-size: 50px;
-  font-weight: bold;
   color: #656d4a;
   text-align: center;
   margin-top: 50px;
+  animation: fadeInUp 0.8s ease forwards;
 }
+
 .stay-p {
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 1rem;
+  font-weight: 300;
   color: #3d412c;
   text-align: center;
   margin: 20px;
-}
-.subscribe-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 80px;
+  animation: fadeInUp 1s ease forwards;
 }
 
 .stay-container {
   background-color: beige;
   border-radius: 12px;
   width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   display: flex;
-  align-items: center;
-  padding: 0;
   flex-direction: column;
-  gap: 35px;
+  align-items: center;
+  gap: 2rem;
+  animation: fadeInUp 1.2s ease forwards;
 }
-/* subscribe-input */
+
+.subscribe-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
 .subscribe-input {
   border: none;
   padding: 10px 20px 10px 30px;
   border-radius: 50px 0 0 50px;
   outline: none;
-  font-size: 14px;
+  font-size: 1rem;
   background-color: white;
   color: #333;
-  width: 300px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: clamp(200px, 60vw, 300px);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .subscribe-input::placeholder {
@@ -55,13 +71,31 @@
   color: white;
   border: none;
   padding: 10px 25px;
-  border-radius: 50px;
+  border-radius: 0 50px 50px 0;
   cursor: pointer;
-  font-size: 14px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
   margin-left: -10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
 .subscribe-button:hover {
   background-color: darkred;
+}
+
+@media (max-width: 500px) {
+  .subscribe-wrapper {
+    flex-direction: column;
+  }
+
+  .subscribe-input {
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .subscribe-button {
+    border-radius: 50px;
+    margin-left: 0;
+  }
 }
