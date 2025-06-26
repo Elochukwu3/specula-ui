@@ -70,7 +70,7 @@
 .article3-img img {
   width: min(100%, 28rem);
   height: auto;
-  border-radius: 50%;
+  border-radius: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   box-shadow: var(--shadow-md);
